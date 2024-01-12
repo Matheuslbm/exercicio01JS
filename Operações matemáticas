@@ -1,0 +1,33 @@
+alert("Iremos fazer operações matemáticas com 2 números da sua escolha!")
+
+let primeiroNum = prompt("Digite o primeiro número")
+let segundoNum = prompt("Digite o segundo número")
+
+primeiroNum = Number(primeiroNum)
+segundoNum = Number(segundoNum)
+
+const soma = primeiroNum + segundoNum
+const subtra = primeiroNum - segundoNum
+const mult = primeiroNum * segundoNum
+const divisao = primeiroNum / segundoNum
+const rest = primeiroNum % segundoNum
+
+alert("A soma dos dois números é: " + soma)
+alert("A subtração dos dois números é: " + subtra)
+alert("A multiplicação dos dois números é: " + mult)
+alert("A divisão dos dois números é: " + divisao)
+alert("O resto da divisão dos dois números é: " + rest)
+
+let iguais = primeiroNum == segundoNum
+if (iguais) {
+  alert("Os dois números inseridos são iguais")
+} else {
+  alert("Os dois números inseridos são diferentes")
+}
+
+//let parImpar = soma % 2 === 0
+if (soma % 2 === 0) {
+  alert("A soma dos dois números inseridos é PAR")
+} else {
+  alert("A soma dos dois números inseridos é impar")
+}
